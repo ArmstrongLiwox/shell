@@ -207,7 +207,7 @@ sudo chmod +x user-input.sh
 
 > **Step 1** 
 
-> Open a file named
+> Open a file named navigating-linux-filesystem.sh
 
 ```
 touch navigating-linux-filesystem.sh
@@ -282,5 +282,147 @@ sudo chmod +x navigating-linux-filesystem.sh
 
 > File Opening and SortingS
 
+> **Step 1** 
 
+> Create a file named sorting.sh
+
+```
+touch sorting.sh
+```
+
+> **Step 2** 
+
+> Copy and paste code into the script file
+
+```
+#!/bin/bash
+
+# Create three files
+echo "Creating files..."
+echo "This is file3." > file3.txt
+echo "This is file1." > file1.txt
+echo "This is file2." > file2.txt
+echo "Files created."
+
+# Display the files in their current order
+echo "Files in their current order:"
+ls
+
+# Sort the files alphabetically
+echo "Sorting files alphabetically..."
+ls | sort > sorted_files.txt
+echo "Files sorted."
+
+# Display the sorted files
+echo "Sorted files:"
+cat sorted_files.txt
+
+# Remove the original files
+echo "Removing original files..."
+rm file1.txt file2.txt file3.txt
+echo "Original files removed."
+
+# Rename the sorted file to a more descriptive name
+echo "Renaming sorted file..."
+mv sorted_files.txt sorted_files_sorted_alphabetically.txt
+echo "File renamed."
+
+# Display the final sorted file
+echo "Final sorted file:"
+cat sorted_files_sorted_alphabetically.txt
+```
+
+![nano sorting](<images/nano sorting.png>)
+
+> **Step 3** 
+
+> Make script executable
+
+```
+sudo chmod +x sorting.sh
+
+```
+
+> **Step 4** 
+
+> Run the script
+
+```
+./sorting.sh
+
+```
+![sorting](images/sorting.png)
+
+
+## Working with numbers and calculations
+
+> Working with numbers and calculations
+
+> File Opening and SortingS
+
+> **Step 1** 
+
+> Create a file named calculations.sh
+
+```
+touch calculations.sh
+```
+
+> **Step 2** 
+
+> Copy and paste code into the script file
+
+```
+#!/bin/bash
+
+# Define two variables with numeric values
+num1=10
+num2=5
+
+# Perform basic arithmetic operations
+sum=$((num1 + num2))
+difference=$((num1 - num2))
+product=$((num1 * num2))
+quotient=$((num1 / num2))
+remainder=$((num1 % num2))
+
+# Display the results
+echo "Number 1: $num1"
+echo "Number 2: $num2"
+echo "Sum: $sum"
+echo "Difference: $difference"
+echo "Product: $product"
+echo "Quotient: $quotient"
+echo "Remainder: $remainder"
+
+# Perform some more complex calculations
+power_of_2=$((num1 ** 2))
+square_root=$(awk "BEGIN{ sqrt=$num2; print sqrt }")
+
+# Display the results
+echo "Number 1 raised to the power of 2: $power_of_2"
+echo "Square root of number 2: $square_root"
+```
+
+![calculations.sh](<images/create and paste calculations.png>)
+
+> **Step 3** 
+
+> Make script executable
+
+```
+sudo chmod +x calculations.sh
+
+```
+
+> **Step 4** 
+
+> Run the script
+
+```
+./calculations.sh
+
+```
+
+![run calculations](<images/run calculations.png>)
 
