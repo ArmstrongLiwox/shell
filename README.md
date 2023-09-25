@@ -201,3 +201,86 @@ sudo chmod +x user-input.sh
 ![run script](<images/run script.png>)
 
 
+## Directory Manipulation and Navigation
+
+> Directory Manipulation and Navigation
+
+> **Step 1** 
+
+> Open a file named
+
+```
+touch navigating-linux-filesystem.sh
+```
+
+> **Step 2** 
+
+> Paste code block into file
+
+```
+#!/bin/bash
+
+# Display current directory
+echo "Current directory: $PWD"
+
+# Create a new directory
+echo "Creating a new directory..."
+mkdir my_directory
+echo "New directory created."
+
+# Change to the new directory
+echo "Changing to the new directory..."
+cd my_directory
+echo "Current directory: $PWD"
+
+# Create some files
+echo "Creating files..."
+touch file1.txt
+touch file2.txt
+echo "Files created."
+
+# List the files in the current directory
+echo "Files in the current directory:"
+ls
+
+# Move one level up
+echo "Moving one level up..."
+cd ..
+echo "Current directory: $PWD"
+
+# Remove the new directory and its contents
+echo "Removing the new directory..."
+rm -rf my_directory
+echo "Directory removed."
+
+# List the files in the current directory again
+echo "Files in the current directory:"
+ls
+```
+
+![create nav](<images/create nav.png>)
+
+> **Step 3** 
+
+> Make script executable
+
+```
+sudo chmod +x navigating-linux-filesystem.sh
+```
+
+> **Step 4** 
+
+> Run the script
+
+```
+./navigating-linux-filesystem.sh
+```
+![run nav](<images/run nav file.png>)
+
+
+## File Opening and Sorting
+
+> File Opening and SortingS
+
+
+
