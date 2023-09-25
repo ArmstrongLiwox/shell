@@ -63,7 +63,16 @@ fi
 ```
 ![paste scripr code](images/script.png)
 
+```
+chmod +x script.sh
+```
 
+> run the script
+
+```
+./script.sh
+```
+![number is positive](<images/number response.png>)
 
 
 
