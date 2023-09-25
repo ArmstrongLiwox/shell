@@ -17,7 +17,7 @@ touch script.sh
 ...
 ## Shell Scripting Syntax Elements
 
-1. Variables
+1. ## Variables
 
 > Bash allows you to define work with variables
 
@@ -36,7 +36,7 @@ echo $name
 ```
 ![echo name](<images/echo name.png>)
 
-1. ## Control Flow
+2. ## Control Flow
 
 > Bash provides control flow statements like:
 
@@ -95,5 +95,109 @@ done
 ![iterate numbers](<images/iterate number.png>)
 
 
-1. ## Command Substitution:
+3. ## Command Substitution:
+
+> Command Substitution allows you to capture the output of a command and use it as a value within your script.
+
+> You can use the backtick or the ***$()*** syntax for command substitution.
+
+> *Example:* 
+
+> Using backtick for command substitution
+
+```
+current_date=`date +%Y-%m-%d`
+```
+```
+current_date=$(date +%Y-%m-%d)
+```
+```
+echo "Enter your name:"
+read name
+```
+```
+echo "Hello World"
+```
+```
+echo "hello world" > index.txt
+```
+```
+grep "pattern" < input.txt
+```
+```
+echo "hello world" | grep "pattern"
+```
+```
+#!/bin/bash
+
+# Define a function to greet the user
+greet() {
+    echo "Hello, $1! Nice to meet you."
+}
+
+# Call the greet function and pass the name as an argument
+greet "Armstrong"
+```
+
+
+## Writing our first script
+
+> **Step 1** 
+
+> Open a folder called shell-scripting
+
+```
+mkdir shell-scripting
+```
+
+> **Step 2** 
+
+> Create a file called user-input.sh
+
+```
+touch user-input.sh
+```
+
+![create folder and file](<images/create file.png>)
+
+
+> **Step 3** 
+
+> paste block of code into the file
+
+```
+#!/bin/bash
+
+# Prompt the user for their name
+echo "Enter your name:"
+read name
+
+# Display a greeting with the entered name
+echo "Hello, $name! Nice to meet you."
+```
+
+![code](<images/paste code.png>)
+
+> **Step 4** 
+
+> Save the file
+
+> **Step 5** 
+
+> Make the file executable
+
+```
+sudo chmod +x user-input.sh
+```
+
+> **Step 6** 
+
+> Run the script
+
+```
+./user-input.sh
+```
+
+![run script](<images/run script.png>)
+
 
