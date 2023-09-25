@@ -36,7 +36,7 @@ echo $name
 ```
 ![echo name](<images/echo name.png>)
 
-1. Control Flow
+1. ## Control Flow
 
 > Bash provides control flow statements like:
 
@@ -95,4 +95,5 @@ done
 ![iterate numbers](<images/iterate number.png>)
 
 
+1. ## Command Substitution:
 
