@@ -14,8 +14,6 @@
 touch script.sh
 ```
 
-
-
 ...
 ## Shell Scripting Syntax Elements
 
@@ -63,7 +61,7 @@ else
     echo "The number is zero."
 fi
 ```
-
+![paste scripr code](images/script.png)
 
 
 
